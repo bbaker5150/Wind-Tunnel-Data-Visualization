@@ -1,0 +1,35 @@
+# --- Python Basics ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- Virtual Environments ---
+# It's standard practice to name envs 'venv', 'env', or '.venv'
+venv/
+env/
+.venv/
+
+# --- Data Files ---
+# Ignore all CSVs to keep repo light and data private
+*.csv
+*.xlsx
+# Explicitly ignore your specific data file just in case
+Export_CalWheel0.csv
+
+# --- Streamlit ---
+# Ignore local Streamlit configuration and secrets
+.streamlit/secrets.toml
+# You might want to keep config.toml if you share theme settings, 
+# but often it is local-only. Uncomment below to ignore it:
+# .streamlit/config.toml
+
+# --- IDE & OS ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# --- Distribution ---
+build/
+dist/
+*.egg-info/
