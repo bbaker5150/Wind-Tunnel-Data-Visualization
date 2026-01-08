@@ -6,6 +6,13 @@ from scipy.interpolate import griddata
 import os
 
 # ==========================================
+# STREAMLIT
+# Streamlit is a Python library that turns data scripts into shareable web apps in minutes.
+# It allows us to create interactive UI elements (like sliders, buttons, and graphs) 
+# using simple Python commands, without needing to know HTML, CSS, or JavaScript.
+# ==========================================
+
+# ==========================================
 # 1: PAGE SETUP
 # ==========================================
 # This sets the browser tab title and layout. 
