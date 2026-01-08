@@ -6,7 +6,7 @@ from scipy.interpolate import griddata
 import os
 
 # ==========================================
-# CHAPTER 1: PAGE SETUP
+# 1: PAGE SETUP
 # ==========================================
 # This sets the browser tab title and layout. 
 # "layout='wide'" uses the full width of the monitor, which is great for big 3D plots.
@@ -19,7 +19,7 @@ Use the menu on the left to filter noise and adjust the view.
 """)
 
 # ==========================================
-# CHAPTER 2: DATA LOADING FUNCTION
+# 2: DATA LOADING FUNCTION
 # ==========================================
 # We use @st.cache_data to speed things up. It tells Streamlit:
 # "If the file hasn't changed, don't waste time reloading it from scratch."
@@ -76,7 +76,7 @@ def load_data(uploaded_file=None, local_path='Export_CalWheel0.csv'):
         return df_clean[['x', 'y', 'z', 'c']].dropna()
 
 # ==========================================
-# CHAPTER 3: SIDEBAR CONTROLS
+# 3: SIDEBAR CONTROLS
 # ==========================================
 with st.sidebar:
     st.header("⚙️ Configuration")
@@ -84,7 +84,7 @@ with st.sidebar:
     # Step 1: File Uploader
     uploaded_file = st.file_uploader("Upload CSV File", type=['csv'])
     
-    # Step 2: Actually load the data using our function from Chapter 2
+    # Step 2: Actually load the data using our function from 2
     df = load_data(uploaded_file)
 
 # Only run the rest of the app if data loaded successfully
@@ -144,7 +144,7 @@ if df is not None:
         grid_density = st.slider("Smoothness (Resolution)", 50, 300, 100)
 
     # ==========================================
-    # CHAPTER 4: DATA PROCESSING
+    # 4: DATA PROCESSING
     # ==========================================
     
     # 1. Apply the Slider Filters
@@ -198,7 +198,7 @@ if df is not None:
                 Z_grid = None
 
         # ==========================================
-        # CHAPTER 5: PLOTTING
+        # 5: PLOTTING
         # ==========================================
         if Z_grid is not None:
             # Create the 3D Surface
