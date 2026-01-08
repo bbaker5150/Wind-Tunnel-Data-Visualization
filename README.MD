@@ -7,7 +7,7 @@ It is designed to visualize **Wind Velocity** (Height) and **Data Rate** (Color)
 ## 🚀 Features
 
 * **Interactive 3D Plotting:** Rotate, zoom, and pan the surface model.
-* **Dynamic Filtering:** Sidebar sliders to filter X, Y, and Z (Velocity) ranges in real-time.
+* **Dynamic Filtering:** Sidebar sliders to filter X, Y, and Z (Velocity) ranges in real-time, able to filter 0 velocity noise.
 * **Data Interpolation:** Uses Cubic interpolation to create smooth surfaces from scattered data points.
 * **Customization:** Change color maps (Jet, Viridis, Turbo) and grid resolution.
 * **Drag & Drop:** Upload new CSV files directly through the browser interface.
